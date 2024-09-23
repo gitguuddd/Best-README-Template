@@ -1,117 +1,95 @@
+# MyAwesomeApp
 
-<a id="readme-top"></a>
+A simple tool to help organize your tasks and boost productivity. The app is designed to streamline daily workflows by letting users track tasks, set reminders, and prioritize to-dos in one place.
 
+## Table of Contents
+- [Description](#description)
+- [Getting Started](#getting-started)
+  - [Dependencies](#dependencies)
+  - [Installing](#installing)
+  - [Usage](#usage)
+- [Deployment](#deployment)
+- [Roadmap](#roadmap)
+- [Version History](#version-history)
 
+## Description
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#installation">Deployment Information</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-  </ol>
-</details>
+**MyAwesomeApp** is a web-based task management application built to help users stay organized. The app allows users to create tasks, assign priority levels, and set deadlines. Whether you’re managing personal to-dos or team projects, this app ensures that no task slips through the cracks. The app is built with modern web technologies, including React, Node.js, and MongoDB, and is optimized for both desktop and mobile use.
 
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Dependencies
 
-### Prerequisites
+* Node.js v14.x or higher
+* MongoDB (local or cloud instance)
+* Any modern browser (Chrome, Firefox, etc.)
+* Operating System: Windows 10 / macOS / Linux
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+### Installing
 
-### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/username/MyAwesomeApp.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd MyAwesomeApp
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Set up environment variables (create a `.env` file in the root directory):
+    ```bash
+    MONGODB_URI=your_mongo_db_uri
+    PORT=5000
+    ```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+### Usage
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* To start the development server:
+    ```bash
+    npm run dev
+    ```
+* Open your browser and go to `http://localhost:5000` to see the app in action.
+* To run the app in production:
+    ```bash
+    npm start
+    ```
 
+## Deployment
 
+The app is deployed on **[Render](https://render.com)** for both the frontend and backend services, utilizing the platform’s free plan. The MongoDB database is hosted using **[MongoDB Atlas](https://www.mongodb.com/atlas)**, also on a free tier.
 
-<!-- USAGE EXAMPLES -->
-## Usage
+Here’s how the deployment is structured:
+- **Frontend**: Deployed as a static site on Render, built from the `main` branch.
+- **Backend**: Deployed as a Node.js API service on Render, using the `main` branch for automatic deployment.
+- **Database**: Hosted on MongoDB Atlas, connected to the backend via the `MONGODB_URI` environment variable.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The deployment process on Render is automated, so anytime code is pushed to the `main` branch, the site and API are automatically updated. The steps for deployment were:
+1. Set up two services on Render (one for the frontend and one for the backend).
+2. Link each service to the GitHub repository.
+3. Add environment variables (e.g., `MONGODB_URI`) in the Render dashboard.
+4. Push code to the `main` branch for automatic deployment.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+If you want to run the app on another platform (like Heroku or Vercel), similar steps can be followed—just ensure your environment variables are set properly for your database connection.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Initial setup with React and Node.js
+- [x] User authentication (JWT-based)
+- [ ] Task creation and management features
+- [ ] Add user notifications and reminders
+- [ ] Implement multi-user collaboration features
+- [ ] Optimize for mobile devices
+- [ ] Set up CI/CD pipeline for automated testing and deployments
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+This roadmap outlines the planned features and improvements for **MyAwesomeApp**. Completed items are checked off, while upcoming features remain in progress or under consideration.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Version History
+
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
