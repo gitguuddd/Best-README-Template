@@ -63,6 +63,8 @@ A simple tool to help organize your tasks and boost productivity. The app is des
 
 ## Deployment
 
+- [Link to the project](#usage)
+
 The app is deployed on **[Render](https://render.com)** for both the frontend and backend services, utilizing the platform’s free plan. The MongoDB database is hosted using **[MongoDB Atlas](https://www.mongodb.com/atlas)**, also on a free tier.
 
 Here’s how the deployment is structured:
