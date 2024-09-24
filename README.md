@@ -83,8 +83,8 @@ If you want to run the app on another platform (like Heroku or Vercel), similar 
 
 ## Version History
 
-* 0.2
+* [v0.2]()
     * Added basic CRUD for posts
     * Added routes for register and login
-* 0.1
+* [v0.1]()
     * Initial Release
