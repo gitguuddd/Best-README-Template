@@ -52,6 +52,10 @@ A simple tool to help organize your tasks and boost productivity. The app is des
     npm run dev
     ```
 * Open your browser and go to `http://localhost:5000` to see the app in action.
+* To run tests:
+    ```bash
+    npm run test
+    ```
 * To run the app in production:
     ```bash
     npm start
