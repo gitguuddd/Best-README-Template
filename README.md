@@ -63,7 +63,7 @@ A simple tool to help organize your tasks and boost productivity. The app is des
 
 ## Deployment
 
-- [Link to the project](#usage)
+[Link to the project](#usage)
 
 The app is deployed on **[Render](https://render.com)** for both the frontend and backend services, utilizing the platform’s free plan. The MongoDB database is hosted using **[MongoDB Atlas](https://www.mongodb.com/atlas)**, also on a free tier.
 
@@ -80,17 +80,6 @@ The deployment process on Render is automated, so anytime code is pushed to the 
 
 If you want to run the app on another platform (like Heroku or Vercel), similar steps can be followed—just ensure your environment variables are set properly for your database connection.
 
-## Roadmap
-
-- [x] Initial setup with React and Node.js
-- [x] User authentication (JWT-based)
-- [ ] Task creation and management features
-- [ ] Add user notifications and reminders
-- [ ] Implement multi-user collaboration features
-- [ ] Optimize for mobile devices
-- [ ] Set up CI/CD pipeline for automated testing and deployments
-
-This roadmap outlines the planned features and improvements for **MyAwesomeApp**. Completed items are checked off, while upcoming features remain in progress or under consideration.
 
 ## Version History
 
