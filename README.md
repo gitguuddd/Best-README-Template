@@ -9,7 +9,6 @@ A simple tool to help organize your tasks and boost productivity. The app is des
   - [Installing](#installing)
   - [Usage](#usage)
 - [Deployment](#deployment)
-- [Roadmap](#roadmap)
 - [Version History](#version-history)
 
 ## Description
